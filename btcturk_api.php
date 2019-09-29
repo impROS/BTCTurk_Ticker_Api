@@ -7,8 +7,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $arrCoin = curl_exec($ch);
 
 curl_close($ch);
-//echo count($arrCoin);
-//echo json_encode($arrCoin);
 //print_r($arrCoin);
 $arrCoin = json_decode($arrCoin, true);
 $arrCoin = $arrCoin["data"];
